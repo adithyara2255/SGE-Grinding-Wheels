@@ -3100,3 +3100,317 @@ nav div a:last-child::after {
 
     color: #666666;
 }
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 25px;
+    }
+
+    nav > a {
+        font-size: 22px;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    nav div a {
+        font-size: 14px;
+    }
+
+
+    /* General Sections */
+    section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    /* Hero Sections */
+    .hero {
+        padding: 80px 25px;
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* Product Hero */
+    .product-hero {
+        padding: 70px 25px;
+        min-height: 300px;
+    }
+
+    .product-hero h1 {
+        font-size: 38px;
+    }
+
+    .product-hero p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* Product Layout */
+    .product-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 25px;
+    }
+
+    .product-sidebar {
+        width: 100%;
+    }
+
+    .product-details {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .product-details h2 {
+        font-size: 30px;
+    }
+
+
+    /* Product Image */
+    .product-image {
+        padding: 25px;
+        margin: 40px 0;
+    }
+
+
+    /* Product Specifications */
+    .product-specifications {
+        padding: 25px;
+    }
+
+    .product-specifications div {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+
+    /* Product Grid */
+    .product-list-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list-item {
+        min-height: auto;
+        padding: 25px;
+    }
+
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 45px 25px;
+        gap: 35px;
+    }
+
+    .site-footer {
+        margin-top: 50px;
+    }
+
+}
+/* =========================================================
+   FINAL MOBILE WIDTH FIX
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section,
+nav,
+footer,
+.home-hero,
+.home-intro,
+.home-products,
+.home-industries,
+.home-cta,
+.site-footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.home-hero-content,
+.home-intro-content,
+.home-products > *,
+.home-industries > *,
+.footer-content,
+.product-content,
+.about-introduction-content,
+.about-services-heading,
+.about-service-grid,
+.about-values,
+.industries-intro,
+.industries-grid,
+.industry-focus,
+.quality-intro,
+.quality-principles-heading,
+.quality-grid,
+.quality-process,
+.contact-section,
+.quote-section,
+.product-categories {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .home-hero,
+    .home-intro,
+    .home-products,
+    .home-industries,
+    .home-cta,
+    .site-footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-hero-content,
+    .home-intro-content,
+    .home-industries-content,
+    .home-industries-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-hero h1 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .hero-description,
+    .home-intro p:not(.section-label),
+    .home-cta > p:not(.section-label) {
+        max-width: 100%;
+    }
+}
+/* =========================================================
+   FINAL HOMEPAGE MOBILE FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .home-hero {
+        min-height: 550px;
+        padding: 70px 25px;
+    }
+
+    .home-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-hero h1 {
+        font-size: 48px;
+        line-height: 1.05;
+        letter-spacing: -1px;
+        max-width: 100%;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .home-hero h1 {
+        font-size: 42px;
+    }
+
+}
+/* =========================================================
+   FINAL MOBILE FIX - INDUSTRIES SECTION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .home-industries {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 70px 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: stretch;
+    }
+
+    .home-industries-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .home-industries-content h2 {
+        font-size: 34px;
+        line-height: 1.15;
+        max-width: 100%;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .home-industries-content > p:not(.section-label) {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .home-industries-visual {
+        width: 100%;
+        min-width: 0;
+        min-height: 260px;
+        border-left: 5px solid #b00000;
+    }
+
+    .home-industries-visual span {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .home-industries {
+        padding: 60px 25px;
+        gap: 35px;
+    }
+
+    .home-industries-content h2 {
+        font-size: 32px;
+    }
+
+    .home-industries-visual {
+        min-height: 240px;
+    }
+
+    .home-industries-visual span {
+        font-size: 25px;
+    }
+}
